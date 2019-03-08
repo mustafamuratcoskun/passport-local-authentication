@@ -1,0 +1,33 @@
+{{#if flashSuccess}}
+<div class="alert alert-info">
+    {{flashSuccess}}
+</div>
+{{/if}}
+
+{{#if flashError}}
+<div class="alert alert-info">
+    {{flashError}}
+</div>
+{{/if}}
+{{#if successPassport}}
+<div class="alert alert-primary">
+    {{successPassport}}
+</div>
+{{/if}}
+{{#if errorPassport}}
+<div class="alert alert-danger">
+    {{errorPassport}}
+</div>
+{{/if}}
+{{#if flashError}}
+<div class="alert alert-info">
+    {{flashError}}
+</div>
+{{/if}}
+
+{{#each errors}}
+
+<div class="alert alert-danger">
+    {{message}}
+</div>
+{{/each}}

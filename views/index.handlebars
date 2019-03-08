@@ -1,0 +1,22 @@
+<div class="card">
+
+    <div class="card-header">Registered Users</div>
+
+    <div class="card-body">
+
+        <ul class="list-group">
+            {{#each users}}
+            <li class="list-group-item">{{username}}</li>
+            {{else}}
+            <div class="alert alert-danger">
+
+                There is no registered user!
+            </div>
+            {{/each}}
+        </ul>
+    </div>
+
+</div>
+{{#if user}}
+<h4>Logged In As : {{user.username}}</h4>
+{{/if}}
